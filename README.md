@@ -53,3 +53,61 @@ git clone https://github.com/sulmar/pw-mini-winter2023-net
 - ``` dotnet add package {package name}``` - dodanie pakietu do projektu
 - ``` dotnet list package ``` - wyświetlenie listy pakietów
 - ``` dotnet remove package {package name}``` - usunięcie pakietu z projektu
+
+
+## Protokół HTTP 
+
+~~~
+curl -v https://ww2.mini.pw.edu.pl
+~~~
+
+- Request:
+~~~
+  GET /customers/index.html HTTP/1.1
+  Host: ww2.mini.pw.edu.pl
+  Accept: text/html
+  {blank-line}
+~~~
+
+- Response:
+~~~
+  200 OK
+  Content-Type: text/html
+  
+  <html>...</html>
+~~~
+
+- Request:
+~~~ 
+ POST / HTTP/1.1
+  host: ww2.mini.pw.edu.pl
+  content-type: application/xml
+  <xml><customer>...</customer></xml>
+  {blank-line}
+~~~
+
+- Response:
+~~~
+201 Created
+~~~
+
+## REST API
+### Akcje
+| Akcja  | Opis                  |
+|--------|-----------------------|
+| GET    | Pobierz zasób         |
+| POST   | Utwórz zasób          |
+| PUT    | Zmodyfikuj zasób      |
+| PATCH  | Zmodyfikuj częściowo  |
+| DELETE | Usuń                  |
+| HEAD   | Czy zasób istnieje    |
+
+### Adresy
+- /api/customers
+- /api/customers/10
+- /api/customers/10/orders
+- /api/orders/2023
+- /api/orders/2023/10
+
+
+
