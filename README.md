@@ -103,11 +103,11 @@ curl -v https://ww2.mini.pw.edu.pl
 | HEAD   | Czy zasób istnieje    |
 
 ### Adresy
-- /api/customers
-- /api/customers/10
-- /api/customers/10/orders
-- /api/orders/2023
-- /api/orders/2023/10
+- ``` /api/customers ``` 
+- ``` /api/customers/10 ``` 
+- ``` /api/customers/10/orders ``` 
+- ``` /api/orders/2023 ``` 
+- ``` /api/orders/2023/10 ``` 
 
 
 
