@@ -100,7 +100,7 @@ curl -v https://ww2.mini.pw.edu.pl
 | PUT    | Zmodyfikuj zasób      |
 | PATCH  | Zmodyfikuj częściowo  |
 | DELETE | Usuń                  |
-| HEAD   | Czy zasób istnieje    |
+| HEAD   | Pobierz nagłówek      |
 
 ### Kody Statusów
 | Kod statusu   | Akcja                  | Opis                                              | 
