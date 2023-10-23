@@ -102,6 +102,22 @@ curl -v https://ww2.mini.pw.edu.pl
 | DELETE | Usuń                  |
 | HEAD   | Czy zasób istnieje    |
 
+### Kody Statusów
+| Kod statusu   | Akcja                  | Opis                                              | 
+|---------------|------------------------|---------------------------------------------------| 
+| 200           | OK                     | Żądanie się powiodło                              |
+| 201           | Created                | Zasób został utworzony                            |
+| 202           | Accepted               | Żądanie został przyjęte do przetwarzania          |
+| 204           | No Content             | Żądanie się powiodło ale nie ma nic w odpowiedzi  |
+| 301           | Moved Permanently      | Zasób został przeniesiony                         |
+| 400           | Bad Request            | Błędne żądanie                                    |
+| 401           | Unauthorized           | Brak poświadczeń do zasobu                        |
+| 403           | Forbidden              | Brak dostępu do zasobu                            |
+| 403           | Not Found              | Zasób nie znaleziony                              |
+| 415           | Unsupported Media Type | Nieobsługiwany format                             |
+| 500           | Internal Server Error  | Wewnętrzny błąd serwera                           |
+
+
 ### Adresy
 - ``` /api/customers ``` 
 - ``` /api/customers/10 ``` 
