@@ -7,3 +7,9 @@ public class User : BaseEntity
     public string FullName => $"{FirstName} {LastName}";
     public Gender Gender { get; set; }
 }
+
+public enum Gender
+{
+    Male,
+    Female
+}
