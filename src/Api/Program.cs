@@ -1,5 +1,5 @@
-using Api.Infrastructure;
 
+using Api.Infrastructure;
 using Domain.Abstractions;
 
 var builder = WebApplication.CreateBuilder(args);
