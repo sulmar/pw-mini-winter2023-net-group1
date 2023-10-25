@@ -54,7 +54,7 @@ git clone https://github.com/sulmar/pw-mini-winter2023-net
 - ``` dotnet list package ``` - wyświetlenie listy pakietów
 - ``` dotnet remove package {package name}``` - usunięcie pakietu z projektu
 
-## Entity Framework Core
+#### Entity Framework Core
 - ``` dotnet ef ``` - weryfikacja instalacji
 - ``` dotnet ef migrations add {migration} ``` - dodanie migracji
 - ``` dotnet ef migrations remove ``` - usunięcie ostatniej migracji
