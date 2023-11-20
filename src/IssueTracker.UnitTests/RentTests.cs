@@ -1,10 +1,39 @@
 using Domain.Model;
+using System.Net.Http.Headers;
 
 namespace IssueTracker.UnitTests
 {
+
     [TestClass]
     public class RentTests
-    { 
+    {
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void Assign_EmptyUser_ExpectedArgumentNullExcepction()
+        {
+            // Arrange
+            Rent rent = new Rent();
+
+            // Act
+            rent.Assign(null);
+
+            // Assert
+        }
+
+        [TestMethod]
+        public void Assign_NewRentee_ShouldSetRenteeAsUser()
+        {
+            // Arrange
+            Rent rent = new Rent { Rentee = new User() };
+            User newRentee = new User();
+
+            // Act
+            rent.Assign(newRentee);
+
+            // Assert
+            Assert.ReferenceEquals(rent.Rentee, newRentee);
+        }
+
 
 
         //[TestMethod]

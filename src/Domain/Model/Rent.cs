@@ -10,11 +10,16 @@ public class Rent
 {
     public User Rentee { get; set; }
 
-    public bool CanReturn(User user)
-    {
-        if (user == null)
-            throw new ArgumentNullException("user");
+    public bool CanReturn(User user) => user is null ?
+        throw new ArgumentNullException("user") 
+        : user.IsAdmin || Rentee == user;
 
-        return user.IsAdmin || Rentee == user;
+    public void Assign(User newRentee)
+    {
+        if (newRentee is null)
+            throw new ArgumentNullException();
+
+        this.Rentee = newRentee;   
     }
+    
 }
