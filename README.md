@@ -68,6 +68,13 @@ git clone https://github.com/sulmar/pw-mini-winter2023-net
 - ``` dotnet ef dbcontext list ``` - wyświetlenie listy DbContextów
 - ``` dotnet ef dbcontext scaffold {connectionstring} Microsoft.EntityFrameworkCore.SqlServer -o Models ``` - wygenerowanie modelu na podstawie bazy danych
 
+#### Secret Keys
+- ``` dotnet user-secrets init ``` - utworzenie sekretów
+- ``` dotnet user-secrets set "{key}" "{value}" ``` - ustawienie wartości klucza
+- ``` dotnet user-secrets list ``` - wyświetlenie listy kluczy i wartości
+- ``` dotnet user-secrets remove "{key}" ``` - usunięcie wskazanego klucza
+- ``` dotnet user-secrets clear ``` - usunięcie wszystkich kluczy
+
 ## Protokół HTTP 
 
 ~~~
