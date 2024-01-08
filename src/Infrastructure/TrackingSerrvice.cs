@@ -40,7 +40,7 @@ public class TrackingService
 
     public Location GetLocation()
     {
-        string json =  .ReadAllText("tracking.json");
+        string json = fileReader.ReadAllText("tracking.json");
 
         if (string.IsNullOrEmpty(json))
             throw new Exception();
